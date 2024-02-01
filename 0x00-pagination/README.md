@@ -1,7 +1,7 @@
 <h1>0x00-pagination</h1>
 <img src="img/pagination.png">
 <img src="img/pagination1.png">
-<img src="/img/pagination3.png">
+<img src="img/pagination3.png">
 <h1>Resources</h1>
 <li><a href="https://intranet.alxswe.com/rltoken/7Kdzi9CH1LdSfNQ4RaJUQw"> REST API Design: Pagination</a></li>
 <li><a href="https://intranet.alxswe.com/rltoken/tfzcEbTSdMYSYxsspJH_oA">HATEOAS</a></li>
