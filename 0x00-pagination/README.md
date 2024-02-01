@@ -5,6 +5,8 @@
 <h1>Resources</h1>
 <li><a href="https://intranet.alxswe.com/rltoken/7Kdzi9CH1LdSfNQ4RaJUQw"> REST API Design: Pagination</a></li>
 <li><a href="https://intranet.alxswe.com/rltoken/tfzcEbTSdMYSYxsspJH_oA">HATEOAS</a></li>
+<h2>Setup: Popular_Baby_Names.csv</h2>
+<p><a href="https://intranet.alxswe.com/rltoken/NBLY6mdKDBR9zWvNADwjjg">use this data file </a> for the project</p>
 <h2>Tasks</h2>
 
 <h3>0. Simple helper function</h3>
