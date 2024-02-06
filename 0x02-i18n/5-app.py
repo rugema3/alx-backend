@@ -31,17 +31,17 @@ babel = Babel(app)
 
 def get_user():
     """
-    Returns user information based on the 'login_as' parameter in
-    the request URL.
+    Returns user information based on the 'login_as'
+    parameter in the request URL.
 
     Returns:
-        dict or None: A dictionary containing user information if 'login_as'
-        parameter is present
-                      and valid, otherwise returns None.
+        dict or None: A dictionary containing user information if
+        'login_as' parameter is present
+        and valid, otherwise returns None.
     """
-    user_id = request.args.get('login_as')
+    user_id = request.args.get('login_as', None)
     if user_id is not None and int(user_id) in users.keys():
-        return users[int(user_id)]
+        return users.get(int(user_id))
     return None
 
 
@@ -50,8 +50,6 @@ def before_request():
     """Execute before all other functions."""
     current_user = get_user()
     g.current_user = current_user
-    print("Logged in user:", g.current_user)
-    print(f"Name: {g.current_user['name']}")
 
 
 @babel.localeselector
@@ -73,7 +71,7 @@ def get_locale():
 @app.route('/', strict_slashes=False)
 def index() -> str:
     """Home page of our flask application."""
-    return render_template('5-index.html')
+    return render_template('5-index.html', )
 
 
 if __name__ == '__main__':
