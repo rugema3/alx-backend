@@ -29,8 +29,8 @@ def get_locale():
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-@app.route('/')
-def index():
+@app.route('/', strict_slashes=False)
+def index() -> str:
     """Home page of our flask application."""
     return render_template('3-index.html')
 
